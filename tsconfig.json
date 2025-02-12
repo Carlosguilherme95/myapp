@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true, // Habilita todas as verificações de tipo
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist", // Pasta onde os arquivos compilados irão
+    "rootDir": "./src", // Pasta de origem do TypeScript
+    "experimentalDecorators": true, // Habilita os decoradores
+    "emitDecoratorMetadata": true // Habilita a emissão de metadados para os decoradores
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
