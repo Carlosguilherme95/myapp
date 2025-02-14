@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppDataSource = void 0;
 const typeorm_1 = require("typeorm");
-//import { User } from "../entities/user";  // Exemplo de uma entidade
+const user_1 = require("../entities/user"); // Exemplo de uma entidade
 exports.AppDataSource = new typeorm_1.DataSource({
     type: "mysql", // ou "postgres" ou "sqlite", dependendo do seu banco de dados
     host: "localhost",
@@ -12,7 +12,7 @@ exports.AppDataSource = new typeorm_1.DataSource({
     database: "meubanco", // nome do banco de dados
     synchronize: true, // sincronizar o banco (use com cautela em produção)
     logging: true,
-    entities: [], // adicione suas entidades aqui
+    entities: [user_1.User], // adicione suas entidades aqui
     migrations: [], // adicione migrações quando necessário
     subscribers: [],
 });
